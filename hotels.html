@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+  	<header class="main-header">
+    	<nav class="main-navigation">
+          <ul>
+            <li class="left_nav">
+              <a href="info.html">Информация</a>
+            </li>
+            <li class="left_nav">
+              <a href="gallery.html">Фото и видео</a>
+            </li>
+            <li class="right_nav">
+              <a href="map.html">Карта штата</a>
+            </li>
+            <li class="right_nav">
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="index-logo">
+            <img src="#" width="138" height="70" alt="Sedona" />
+        </div>
+    </header>
+        <!-- End header -->
+    
+    <main class="container">
+        <div class="form">
+            <!-- <img src="#" width="1200" height="800" alt="Sedona image"> -->
+            <form>
+                <div class="infrastructure">
+                    <h2>Инфраструктура</h2>
+                    <input type="checkbox" name="filter_pool" id="pool"><label for="pool">Бассейн</label>
+                    <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label>
+                    <input type="checkbox" name="filter_wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
+                </div>
+                <div class="houses_type">
+                    <h2>Тип жилья</h2>
+                    <input type="checkbox" name="filter_hotels" id="hotels"><label for="hotels">Гостиница</label>
+                    <input type="checkbox" name="filter_motels" id="motels"><label for="motels">Мотель</label>
+                    <input type="checkbox" name="filter_apartments" id="apartments"><label for="apartments">Апартаменты</label>
+                </div>
+                <div class="filter_prise">
+                    <h2>Стоимость в сутки (Р)</h2>
+                    <input type="text" id="minCost" value="0" placeholder="от 0" />
+                    <input type="text" id="maxCost" value="5000" placeholder="до 5000" />
+                    <div class="range">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button class="btn" type="submit">Показать</button>
+                </div>
+            </form>
+        </div>
+        <!-- End form -->
+        <div class="sorting">
+            <p>Найдено: 3</p>
+            <p>Сщртировка</p>
+            <ul class="sorting_type">
+                <li>
+                    <a href="#">По цене</a>
+                </li>
+                <li>
+                    <a href="#">По типу</a>
+                </li>
+                <li>
+                    <a href="#">По рейтингу</a>
+                </li>      
+            </ul>
+        </div>
+        <article class="hotels">
+            <div class="hotel_img">
+                <a href="amara_resort.html">
+                    <img src="img/amara_resort" width="135" height="90" alt="amara resort" />
+                </a>
+            </div>
+            <h2>Amara Resort & SPA</h2>
+            <div class="details">
+                <span>Гостиница</span>
+                <input type="submit" value="Подробнее">
+            </div>
+            <div class="details">
+                <span>от 3500</span>
+                <input type="submit" value="Забронировать">
+            </div>
+            <div class="rating_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <p>Рейтинг: 8,5</p>
+            </div>
+        </article>
+
+        <article class="hotels">
+            <div class="hotel_img">
+                <a href="Desert_Qual_Inn.html">
+                    <img src="img/Desert_Qual_Inn" width="135" height="90" alt="Desert Qual Inn" />
+                </a>
+            </div>
+            <h2>Desert Qual Inn</h2>
+            <div class="details">
+                <span>Мотель</span>
+                <input type="submit" value="Подробнее">
+            </div>
+            <div class="details">
+                <span>от 2000</span>
+                <input type="submit" value="Забронировать">
+            </div>
+            <div class="rating_icon">
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <p>Рейтинг: 8,9</p>
+            </div>
+        </article>
+
+        <article class="hotels">
+            <div class="hotel_img">
+                <a href="villas_at_poco.html">
+                    <img src="img/villas_at_poco" width="135" height="90" alt="villas at poco diablo" />
+                </a>
+            </div>
+            <h2>Villas At Poco Diablo</h2>
+            <div class="details">
+                <span>Апартаменты</span>
+                <input type="submit" value="Подробнее">
+            </div>
+            <div class="details">
+                <span>от 4000</span>
+                <input type="submit" value="Забронировать">
+            </div>
+            <div class="rating_icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div>
+                <p>Рейтинг: 8,5</p>
+            </div>
+        </article>
+    </main>
+    <!-- End main -->
+    <footer class="main-footer">
+      <div class="container">
+        <span>#Visitsedona</span>
+        <section class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-ytube" href="#">Ютуб</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Website by</p>
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/htmlacademy logo.png" width="113" height="39" alt="htmlacademy_logo" /></a>
+        </section>
+      </div>
+    </footer>
+    </main>
+
+    <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
+
+  </body>
+</html>

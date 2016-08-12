@@ -8,43 +8,42 @@
   	<header class="main-header">
     	<nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#">Информация</a>
+            <li class="left_nav">
+              <a href="info.html">Информация</a>
             </li>
-            <li>
-              <a href="#">Фото и видео</a>
+            <li class="left_nav">
+              <a href="gallery.html">Фото и видео</a>
             </li>
-            <li>
-              <a href="#">Карта штата</a>
+            <li class="right_nav">
+              <a href="map.html">Карта штата</a>
             </li>
-            <li>
-              <a href="#">Гостиницы</a>
+            <li class="right_nav">
+              <a href="hotels.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
         <div class="index-logo">
-        <img src="#" width="138" height="70" alt="Sedona" />
-      </div>
-      <div class="background"></div>
-        <div class="header_text">
-        	<img src="#" width="458" height="352" alt="Sedona grennings">
+            <img src="#" width="138" height="70" alt="Sedona" />
         </div>
-        <div class="background_shape"></div>
     </header>
-    <!-- End header -->
+        <!-- End header -->
+    
     <main class="container">
-    	<section class="slogan">
+        <div class="background_view">
+            <img src="#" width="458" height="352" alt="Sedona приветствие">
+        </div>
+    	<section class="about">
       		<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
       		<span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>  
     	</section>
-    	<section class="reason_1">
+    	<section class="reason">
     		<div class="reason_description">
     			<h3> Настоящий городок</h3>
     			<span>№1</span>
     			<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
     		</div>
     		<div class="reason1_img">
-    			<img src="#" width="800" height="256" alt="Причина №1" />
+    			<img src="img/sedona_view.jpg" width="800" height="256" alt="Причина №1" />
     		</div>
     	</section>
     	<section class="features">
@@ -67,9 +66,9 @@
     		</ul>
     	</section>
 
-    	<section class="reason_2">
+    	<section class="reason">
     		<div class="reason2_img">
-    			<img src="#" width="800" height="256" alt="Причина №2" />
+    			<img src="img/canion.jpg" width="800" height="256" alt="Причина №2" />
     		</div>
     		<div class="reason_description">
     			<h3>Там есть мост дьявола</h3>
@@ -79,48 +78,48 @@
     	</section>
     	<section class="other_reasons">
     		<ul class="reason_list">
-    			<li class="reason_3">
+    			<li class="item">
     				<h3>Небольшая площадь</h3>
     				<span>#3</span>
     				<span>Все достопримечательности находятся очень близко</span>
     			</li>
-    			<li class="reason_4">
+    			<li class="item">
     				<h3>Красивая дорога</h3>
     				<span>#4</span>
     				<span>Ехать в Седону из Лас-Вегаса совсем не скучно</span>
     			</li>
-    			<li class="reason_5">
+    			<li class="item">
     				<h3>Мало туристов</h3>
     				<span>#5</span>
     				<span>Большинство едет в Гранд Каньон и толпится там</span>
     			</li>
     		</ul>
     	</section>
-    	<h2>Заинтересовались?</h2>
-    	<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    	<div class="map"></div>
+
     	<div class="form">
-    		<h3>Поиск гостиницы в Седоне</h3>
-	    	<form>
-	    		<label for="check_in">Дата заезда</label><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" /><br>
-	    		<label for="check_out">Дата выезда</label><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" />
-	    		<br>
-	    		<label for="quantity_adult">Взрослые</label><input id="quantity_adult" name="quantity" type="text" value="2">
-	    		<br>
-	    		<label for="quantity_children">Взрослые</label><input id="quantity_children" name="quantity" type="text" value="0">
-	    		<div class="quantity_adult_controls">
-	    			<input class="quantity_adult_plus" type="button">
-	    			<input class="quantity_adult_minus" type="button">
-	    		</div>
-	    		<div class="quantity_children_controls">
-	    			<input class="quantity_children_plus" type="button">
-	    			<input class="quantity_children_minus" type="button">
-	    		</div>
-	    		<p><input type="submit" value="Найти"></p>
-	    	</form>
-    	</div>
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+    		<h3><a href="hotels.html">Поиск гостиницы в Седоне</a></h3>
+        </div>
+	    <form>
+	    	<label for="check_in">Дата заезда</label><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" />
+	    	<label for="check_out">Дата выезда</label><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" />
+	    	<div class="quantity_controls">
+	    		<input class="quantity_plus" type="button" value="+">
+                 <label for="quantity_adult">Взрослые</label><input id="quantity_adult" name="quantity" type="text" value="2">
+	    		<input class="quantity_minus" type="button" value="-">
+	    	</div>
+	    	<div class="quantity_controls">
+	    		<input class="quantity_plus" type="button" value="+">
+                <label for="quantity_children">Дети</label><input id="quantity_children" name="quantity" type="text" value="0">
+	    		<input class="quantity__minus" type="button" value="-">
+	    	</div>
+	    	<input type="submit" value="Найти">
+	    </form>
+        <div class="map"></div>
     	<!-- End form -->
-    	<footer class="main-footer">
+    </main>
+    <footer class="main-footer">
       <div class="container">
         <span>#Visitsedona</span>
         <section class="footer-social">
@@ -130,11 +129,11 @@
         </section>
         <section class="footer-copyright">
           <p>Website by</p>
-          <a class="btn" href="https://htmlacademy.ru"><img src="img/htmlacademy logo.png" width="113" height="39" alt="htmlacademy logo" /></a>
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy_logo" /></a>
         </section>
       </div>
     </footer>
-    </main>
+    
 
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p> -->
 
