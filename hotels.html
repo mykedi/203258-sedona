@@ -5,53 +5,69 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-  	<header class="main-header">
-    	<nav class="main-navigation">
-          <ul>
-            <li class="left_nav">
-              <a href="info.html">Информация</a>
-            </li>
-            <li class="left_nav">
-              <a href="gallery.html">Фото и видео</a>
-            </li>
-            <li class="right_nav">
-              <a href="map.html">Карта штата</a>
-            </li>
-            <li class="right_nav">
-              <a href="hotels.html">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="index-logo">
-            <img src="#" width="138" height="70" alt="Sedona" />
-        </div>
-    </header>
+    <main class="container">
+  	    <header class="main-header">
+    	    <nav class="main-navigation">
+                <ul>
+                    <li class="left_nav">
+                        <a href="info.html">Информация</a>
+                    </li>
+                    <li class="left_nav">
+                        <a href="gallery.html">Фото и видео</a>
+                    </li>
+                    <li class="right_nav">
+                        <a href="map.html">Карта штата</a>
+                    </li>
+                    <li class="right_nav">
+                        <a href="hotels.html">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="index-logo">
+                <a href="index.html">
+                    <img src="img/logo.png" width="138" height="70" alt="Sedona" />
+                </a>
+            </div>
+        </header>
         <!-- End header -->
     
-    <main class="container">
+    
         <div class="form">
-            <!-- <img src="#" width="1200" height="800" alt="Sedona image"> -->
+            <img src="form_image.png" width="1200" height="800" alt="Sedona image">
             <form>
-                <div class="infrastructure">
-                    <h2>Инфраструктура</h2>
-                    <input type="checkbox" name="filter_pool" id="pool"><label for="pool">Бассейн</label>
-                    <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label>
-                    <input type="checkbox" name="filter_wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
+                <div class="features_form">
+                    <div class="infrastructure">
+                        <h2>Инфраструктура</h2>
+                        <input type="checkbox" name="filter_pool" id="pool"><label for="pool">Бассейн</label>
+                        <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label>
+                        <input type="checkbox" name="filter_wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
+                    </div>
+                    <div class="houses_type">
+                        <h2>Тип жилья</h2>
+                        <input type="checkbox" name="filter_hotels" id="hotels"><label for="hotels">Гостиница</label>
+                        <input type="checkbox" name="filter_motels" id="motels"><label for="motels">Мотель</label>
+                        <input type="checkbox" name="filter_apartments" id="apartments"><label for="apartments">Апартаменты</label>
+                    </div>
                 </div>
-                <div class="houses_type">
-                    <h2>Тип жилья</h2>
-                    <input type="checkbox" name="filter_hotels" id="hotels"><label for="hotels">Гостиница</label>
-                    <input type="checkbox" name="filter_motels" id="motels"><label for="motels">Мотель</label>
-                    <input type="checkbox" name="filter_apartments" id="apartments"><label for="apartments">Апартаменты</label>
-                </div>
-                <div class="filter_prise">
+                <div class="range-filter">
                     <h2>Стоимость в сутки (Р)</h2>
-                    <input type="text" id="minCost" value="0" placeholder="от 0" />
+                    <div class="range-controls">
+                        <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                    <div class="price-controls">
+                        <input class="min-price" type="text" value="от 0">
+                        <input class="max-price" type="text" value="до 3000">
+                    </div>
+                </div>
+                    
+                    <!-- <input type="text" id="minCost" value="0" placeholder="от 0" />
                     <input type="text" id="maxCost" value="5000" placeholder="до 5000" />
                     <div class="range">
                         <span></span>
                         <span></span>
-                    </div>
+                    </div> -->
                     <button class="btn" type="submit">Показать</button>
                 </div>
             </form>
@@ -59,7 +75,7 @@
         <!-- End form -->
         <div class="sorting">
             <p>Найдено: 3</p>
-            <p>Сщртировка</p>
+            <p>Сортировка</p>
             <ul class="sorting_type">
                 <li>
                     <a href="#">По цене</a>
@@ -71,21 +87,23 @@
                     <a href="#">По рейтингу</a>
                 </li>      
             </ul>
+            <a class="sort_up" href="">sort up</a>
+            <a class="sort_down" href="">sort down</a>
         </div>
         <article class="hotels">
             <div class="hotel_img">
                 <a href="amara_resort.html">
-                    <img src="img/amara_resort" width="135" height="90" alt="amara resort" />
+                    <img src="img/amara_resort.jpg" width="135" height="90" alt="amara resort" />
                 </a>
             </div>
             <h2>Amara Resort & SPA</h2>
             <div class="details">
                 <span>Гостиница</span>
-                <input type="submit" value="Подробнее">
+                <a href="amara_resort.html">Подробнее</a>
             </div>
             <div class="details">
                 <span>от 3500</span>
-                <input type="submit" value="Забронировать">
+                <a href="book.html">Забронировать</a>
             </div>
             <div class="rating_icon">
                 <span></span>
@@ -100,18 +118,18 @@
 
         <article class="hotels">
             <div class="hotel_img">
-                <a href="Desert_Qual_Inn.html">
-                    <img src="img/Desert_Qual_Inn" width="135" height="90" alt="Desert Qual Inn" />
+                <a href="desert_Qual_Inn.html">
+                    <img src="img/Desert_Qual_Inn.jpg" width="135" height="90" alt="Desert Qual Inn" />
                 </a>
             </div>
             <h2>Desert Qual Inn</h2>
             <div class="details">
                 <span>Мотель</span>
-                <input type="submit" value="Подробнее">
+                <a href="desert_Qual_Inn.html">Подробнее</a>
             </div>
             <div class="details">
                 <span>от 2000</span>
-                <input type="submit" value="Забронировать">
+                <a href="book.html">Забронировать</a>
             </div>
             <div class="rating_icon">
                 <span></span>
@@ -125,17 +143,17 @@
         <article class="hotels">
             <div class="hotel_img">
                 <a href="villas_at_poco.html">
-                    <img src="img/villas_at_poco" width="135" height="90" alt="villas at poco diablo" />
+                    <img src="img/villas_at_poco.jpg" width="135" height="90" alt="villas at poco diablo" />
                 </a>
             </div>
             <h2>Villas At Poco Diablo</h2>
             <div class="details">
                 <span>Апартаменты</span>
-                <input type="submit" value="Подробнее">
+                <a href="villas_at_poco.html">Подробнее</a>
             </div>
             <div class="details">
                 <span>от 4000</span>
-                <input type="submit" value="Забронировать">
+                <a href="book.html">Забронировать</a>
             </div>
             <div class="rating_icon">
                 <span></span>
