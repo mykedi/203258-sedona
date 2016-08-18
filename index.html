@@ -16,6 +16,11 @@
                     <li class="left_nav">
                         <a href="gallery.html">Фото и видео</a>
                     </li>
+                    <li> class="index-logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" width="138" height="70" alt="Sedona" />
+                        </a>
+                    </li>
                     <li class="right_nav">
                         <a href="map.html">Карта штата</a>
                     </li>
@@ -24,80 +29,78 @@
                     </li>
                 </ul>
             </nav>
-            <div class="index-logo">
-                <a href="index.html">
-                    <img src="img/logo.png" width="138" height="70" alt="Sedona" />
-                </a>
-            </div>
+            
         </header>
         <!-- End header -->
-        <div class="background_view">
+        <!-- <div class="background_view">
             <img src="#" width="458" height="352" alt="Sedona приветствие">
-        </div>
+        </div> -->
     	<section class="about">
       		<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
       		<span>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>  
     	</section>
+
     	<section class="reason">
-    		<div class="reason_description">
+    		<div class="col_1">
     			<h2> Настоящий городок</h2>
     			<span>№1</span>
     			<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
     		</div>
-    		<div class="reason_img">
+            
+    		<div class="col_2">
     			<img src="img/sedona_view.jpg" width="800" height="256" alt="Причина №1" />
     		</div>
     	</section>
-    	<ul class="features_list">
-    		<li class="features_housing">
-    			<div class="housing_img"></div>
-    			<h2>Жилье</h2>
+
+    	<div class="features_list">
+    		<div class="col_1">
+    			<h2 class="features_name">Жилье</h2>
     			<span>Рекомендуем жить в настоящем мотеле, все как в кино!</span>
-    		</li>
-    		<li class="features_food">
-    			<div class="food_img"></div>
-    			<h2>Еда</h2>
+    		</div>
+    		<div class="col_1">
+    			<h2 class="features_name">Еда</h2>
     			<span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
-    		</li>
-    		<li class="features_souvenirs">
-    			<div class="souvenirs_img"></div>
-    			<h2>Сувениры</h2>
+    		</div>
+    		<div class="col_1">
+    			<h2 class="features_name">Сувениры</h2>
     			<span>Не только китайского, но и местного производства!</span>
-    		</li>
-    	</ul>
+    		</div>
+    	</div>
 
     	<section class="reason">
-    		<div class="reason_img">
+    		<div class="col_2">
     			<img src="img/canion.jpg" width="800" height="256" alt="Причина №2" />
     		</div>
-    		<div class="reason_description">
+    		<div class="col_1">
     			<h3>Там есть мост дьявола</h3>
     			<span>№2</span>
     			<span>Да, по нему можно пройти! если конечно вы осмелитесь</span>
     		</div>
     	</section>
-    	<ul class="reason_list">
-    		<li class="item">
-    			<h2>Небольшая площадь</h2>
+
+    	<div class="features_list">
+    		<div class="col_1">
+    			<h2 class="features_name">Небольшая площадь</h2>
     			<span>#3</span>
     			<span>Все достопримечательности находятся очень близко</span>
-    		</li>
-    		<li class="item">
-    			<h2>Красивая дорога</h2>
+    		</div>
+    		<div class="col_1">
+    			<h2 class="features_name">Красивая дорога</h2>
     			<span>#4</span>
     			<span>Ехать в Седону из Лас-Вегаса совсем не скучно</span>
-    		</li>
-    		<li class="item">
-    			<h2>Мало туристов</h2>
+    		</div>
+    		<div class="col_1">
+    			<h2 class="features_name">Мало туристов</h2>
     			<span>#5</span>
     			<span>Большинство едет в Гранд Каньон и толпится там</span>
-    		</li>
-    	</ul>
+    		</div>
+    	</div>
+
     	<div class="form">
-            <h1>Заинтересовались?</h1>
+            <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     		<a class="research_hotels" href="hotels.html">Поиск гостиницы в Седоне</a>
-        </div>
+       
 	    <form class="research" method="get" action="">
 	    	<label for="check_in">Дата заезда</label><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" />
 	    	<label for="check_out">Дата выезда</label><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" />
@@ -112,7 +115,8 @@
 	    		<input class="quantity__minus" type="button" value="-">
 	    	</div>
 	    	<input type="submit" value="Найти">
-	    </form>
+	   </form>
+         </div>
         <div class="map"></div>
     	<!-- End form -->
     </main>
