@@ -1,10 +1,13 @@
 body {
+	min-width: 1280px;
+	min-height: 2762px;
 	font-family: "PT-Sans", "Arial", sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-align: center;
 	line-height: 21px;
-	
+	background: #ffffff url("img/background_photo.jpg") no-repeat 20% top; /*пройти курс по бэкграундам*/
 }
 
 h1 {
@@ -15,3 +18,148 @@ h2 {
 	font-size: 21px;
 }
 
+span {
+	color: #333333;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+  	padding: 0 10px;
+	
+	outline: 3px solid red;
+}
+
+.main-header {
+	width: auto;
+	min-height: 55px;
+
+}
+
+.nav {
+	display: flex;
+	justify-content: space-around;
+	outline: 2px solid red;
+}
+
+	
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+
+.about {
+	width: auto;
+	min-height: 215px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	outline: 2px solid red;
+}
+
+.about > h2 {
+	width: 575px;
+	margin: auto;
+	line-height: 26px;
+	outline: 2px solid red;
+
+}
+.about span {
+	width: 575px;
+	margin: auto;
+	outline: 2px solid red;
+
+}
+
+.reason {
+	height: 258px;
+	display: flex;
+	flex-direction: row;
+	outline: 2px solid red;
+}
+
+.reason .col_1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #81b3d2;
+}
+
+.reason .col_1 h2 {
+	color: #ffffff;
+}
+
+.reason .col_1 span {
+	color: #ffffff;
+}
+
+
+.features_list {
+	height: 255px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #eeeeee;
+}
+
+.features_list .col_1 {
+	width: 300px;
+	outline: 2px solid red;
+}
+
+.form {
+	width: 0 auto;
+	height: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	outline: 2px solid red;
+}
+
+.form h2, p {
+	width: 450px;
+	margin: 0 auto;
+	
+}
+.form h2 {
+	padding: 30px;
+}
+
+.form p {
+	color: #333333;
+}
+
+.form .research {
+	width: 575px;
+	height: 486px;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	margin: auto;
+	outline: 2px solid red;
+}
+
+.map {
+	width: auto;
+	height: 474px;
+	margin: auto;
+	outline: 2px solid red;
+}
+
+.main-footer {
+	width: auto;
+	min-height: 120px;
+	
+}
+footer .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

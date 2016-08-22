@@ -8,7 +8,7 @@
   <body>
     <main class="container">
   	    <header class="main-header">
-    	   <nav class="main-navigation">
+    	   <!-- <nav class="main-navigation">
                 <ul>
                     <li class="left_nav">
                         <a href="info.html">Информация</a>
@@ -16,7 +16,7 @@
                     <li class="left_nav">
                         <a href="gallery.html">Фото и видео</a>
                     </li>
-                    <li> class="index-logo">
+                    <li class="index-logo">
                         <a href="index.html">
                             <img src="img/logo.png" width="138" height="70" alt="Sedona" />
                         </a>
@@ -28,7 +28,28 @@
                         <a href="hotels.html">Гостиницы</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> -->
+            <nav class="main-navigation">
+                <ul class="nav">
+                    <li>
+                        <a href="info.html">Информация</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html">Фото и видео</a>
+                    </li>
+                    <li class="index-logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" width="138" height="70" alt="Sedona" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="map.html">Карта штата</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Гостиницы</a>
+                    </li>
+                </ul>
+            </nav> <!-- Убрала классы у li -->
             
         </header>
         <!-- End header -->
@@ -48,7 +69,7 @@
     		</div>
             
     		<div class="col_2">
-    			<img src="img/sedona_view.jpg" width="800" height="256" alt="Причина №1" />
+    			<img src="img/sedona_view.jpg" width="800" height="258" alt="Причина №1" />
     		</div>
     	</section>
 
@@ -69,10 +90,10 @@
 
     	<section class="reason">
     		<div class="col_2">
-    			<img src="img/canion.jpg" width="800" height="256" alt="Причина №2" />
+    			<img src="img/canion.jpg" width="800" height="258" alt="Причина №2" />
     		</div>
     		<div class="col_1">
-    			<h3>Там есть мост дьявола</h3>
+    			<h2>Там есть мост дьявола</h2>
     			<span>№2</span>
     			<span>Да, по нему можно пройти! если конечно вы осмелитесь</span>
     		</div>
@@ -101,22 +122,22 @@
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     		<a class="research_hotels" href="hotels.html">Поиск гостиницы в Седоне</a>
        
-	    <form class="research" method="get" action="">
-	    	<label for="check_in">Дата заезда</label><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" />
-	    	<label for="check_out">Дата выезда</label><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" />
-	    	<div class="quantity_controls">
-	    		<input class="quantity_plus" type="button" value="+">
-                 <label for="quantity_adult">Взрослые</label><input id="quantity_adult" name="quantity" type="text" value="2">
-	    		<input class="quantity_minus" type="button" value="-">
-	    	</div>
-	    	<div class="quantity_controls">
-	    		<input class="quantity_plus" type="button" value="+">
-                <label for="quantity_children">Дети</label><input id="quantity_children" name="quantity" type="text" value="0">
-	    		<input class="quantity__minus" type="button" value="-">
-	    	</div>
-	    	<input type="submit" value="Найти">
-	   </form>
-         </div>
+	       <form class="research" method="get" action="">
+	    	  <label for="check_in">Дата заезда</label><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" />
+	    	  <label for="check_out">Дата выезда</label><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" />
+	    	  <div class="quantity_controls">
+	    		 <input class="quantity_plus" type="button" value="+">
+                    <label for="quantity_adult">Взрослые</label><input id="quantity_adult" name="quantity" type="text" value="2">
+	    		 <input class="quantity_minus" type="button" value="-">
+	    	  </div>
+	    	  <div class="quantity_controls">
+	    		 <input class="quantity_plus" type="button" value="+">
+                    <label for="quantity_children">Дети</label><input id="quantity_children" name="quantity" type="text" value="0">
+	    		 <input class="quantity__minus" type="button" value="-">
+	    	  </div>
+	    	  <input type="submit" value="Найти">
+	       </form>
+        </div>
         <div class="map"></div>
     	<!-- End form -->
     </main>
