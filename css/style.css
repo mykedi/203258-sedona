@@ -1,24 +1,26 @@
 body {
 	min-width: 1280px;
 	min-height: 2762px;
-	font-family: "PT-Sans", "Arial", sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
-	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 21px;
 	background: #ffffff url("img/background_photo.jpg") no-repeat 20% top; /*пройти курс по бэкграундам*/
+
 }
 
 h1 {
-	font-size: 30px; 
+	font-size: 30px;
+	font-weight: bold; 
 }
 
 h2 {
 	font-size: 21px;
+	font-weight: bold;
 }
 
-span {
+p {
 	color: #333333;
 }
 
@@ -44,13 +46,143 @@ span {
 
 	
 ul {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  align-items: center;
+  	list-style: none;
+  	margin: 0;
+  	padding-left: 0;
+  	align-items: center;
 }
+
+.nav li {
+	width: 20%;
+}
+
 a {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+.background_view {
+	height: 508px;
+	background: url("../img/background_photo.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+
+.background_view:after {
+	content: "";
+	background: url("../img/background_shape.png") no-repeat;
+	height: 57px;
+	
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.background_view img {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.inner_form {
+	height: 217px;
+	background: url("../img/form_image.jpg") no-repeat center;
+	background-size: cover;
+	color: #ffffff;
+	
+	text-align: left;
+	outline: 2px solid red;
+}
+
+
+
+.features_form {
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	text-align: left;
+	
+}
+
+.features_form .infrastructure {
+	width: 20%;
+	padding-left: 70px;
+	line-height: 3em;
+	
+	outline: 2px solid red;
+}
+
+
+.features_form .houses_type {
+	width: 25%;
+	padding-left: 10px;
+	line-height: 3em;
+	
+	outline: 2px solid red;
+}
+
+.range-filter {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.sorting {
+	width: 1056px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	
+	outline: 2px solid red;
+}
+
+.sorting p {
+	/*width: 25%;*/
+	align-items: stretch;
+	padding-right: 45px;
+}
+
+.sorting_type {
+	width: 25%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.range {
+	display: flex;
+	align-items: center;
+}
+
+
+.inner-page .hotels {
+	width: 1056px;
+	min-height: 59px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: 1px solid #e5e5e5;
+	
+
+	/*outline: 2px solid red;*/
+}
+
+.inner-page .hotel_img {
+	padding: 30px 30px 30px 0px;
+}
+
+.inner-page .description h2 {
+	margin: 0;
+}
+
+.description .details {
+	flex-direction: column;
+}
+
+.inner-page .rating {
+	justify-content: flex-end;
 }
 
 .about {
@@ -65,12 +197,12 @@ a {
 
 .about > h2 {
 	width: 575px;
-	margin: auto;
+	margin: 55 0 0 0px;
 	line-height: 26px;
 	outline: 2px solid red;
 
 }
-.about span {
+.about p {
 	width: 575px;
 	margin: auto;
 	outline: 2px solid red;
@@ -78,40 +210,79 @@ a {
 }
 
 .reason {
-	height: 258px;
+	/*height: 258px;*/
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #81b3d2;
 	outline: 2px solid red;
 }
 
-.reason .col_1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	background-color: #81b3d2;
-}
+/*.reason .col_1 {
+	width: 33,33333%;
+	
+	text-align: center;
+	margin: auto;
+
+}*/
 
 .reason .col_1 h2 {
 	color: #ffffff;
+
+
 }
 
-.reason .col_1 span {
+.reason .col_1 p {
 	color: #ffffff;
+
+	
 }
 
+/*.reason .col_1 .number {
+	padding: 25 0px;
+}*/
+
+
+.reason_image {
+	position: relative;
+	height: 256px;
+	overflow: hidden;
+}
+
+.reason_image img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.col_1 {
+	width: 33.33333%;
+	outline: 2px solid yellow;
+}
+
+.col_2 {
+	width: 66.66666%;
+}
 
 .features_list {
 	height: 255px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
+	align-items: center;
 	background-color: #eeeeee;
 }
 
+/*.reason .col_1 {
+	padding: 50 0px;
+}*/
+
 .features_list .col_1 {
-	width: 300px;
-	outline: 2px solid red;
+	padding: 50px;
 }
 
 .form {
@@ -123,12 +294,14 @@ a {
 	outline: 2px solid red;
 }
 
-.form h2, p {
+.form p {
 	width: 450px;
 	margin: 0 auto;
 	
 }
 .form h2 {
+	width: 450px;
+	margin: 0 auto;
 	padding: 30px;
 }
 
@@ -147,8 +320,9 @@ a {
 }
 
 .map {
+	background: url(../img/map.jpg) no-repeat;
 	width: auto;
-	height: 474px;
+	height: 593px;
 	margin: auto;
 	outline: 2px solid red;
 }
@@ -156,10 +330,40 @@ a {
 .main-footer {
 	width: auto;
 	min-height: 120px;
+	background: rgba(255, 255, 255, 0.9)
 	
 }
 footer .container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
 }
+
+footer .container p {
+	width: 33.33333%;
+	/*margin: 0 auto;*/
+}
+
+.footer-social {
+	width: 33.33333%;
+}
+
+.footer-copyright {
+	width: 33.33333%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-copyright span {
+	margin-right: 5px;
+}
+
+
+/*.logo_academy {
+	padding-left: 50px;
+}*/
