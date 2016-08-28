@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -13,7 +14,7 @@
             <nav class="main-navigation">
                 <ul class="nav">
                     <li>
-                        <a href="info.html">Информация</a>
+                        <a href="index.html">Информация</a>
                     </li>
                     <li>
                         <a href="gallery.html">Фото и видео</a>
@@ -56,17 +57,17 @@
     		</div>
     	</section>
 
-    	<div class="features_list">
+    	<div class="features_list first">
     		<div class="col_1">
-    			<h2 class="features_name">Жилье</h2>
+    			<h2 class="housing">Жилье</h2>
     			<p>Рекомендуем жить в настоящем мотеле, все как в кино!</p>
     		</div>
     		<div class="col_1">
-    			<h2 class="features_name">Еда</h2>
+    			<h2 class="food">Еда</h2>
     			<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
     		</div>
     		<div class="col_1">
-    			<h2 class="features_name">Сувениры</h2>
+    			<h2 class="souvenirs">Сувениры</h2>
     			<p>Не только китайского, но и местного производства!</p>
     		</div>
     	</div>
@@ -82,20 +83,20 @@
     		</div>
     	</section>
 
-    	<div class="features_list">
+    	<div class="features_list second">
     		<div class="col_1">
     			<h2 class="features_name">Небольшая площадь</h2>
-    			<p class="number">#3</p>
-    			<p>Все достопримечательности находятся очень близко</p>
+    			<p class="number">№3</p>
+    			<p>Все достопримечательности<br> находятся очень близко</p>
     		</div>
     		<div class="col_1">
     			<h2 class="features_name">Красивая дорога</h2>
-    			<p class="number">#4</p>
-    			<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+    			<p class="number">№4</p>
+    			<p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно</p>
     		</div>
     		<div class="col_1">
     			<h2 class="features_name">Мало туристов</h2>
-    			<p class="number">#5</p>
+    			<p class="number">№5</p>
     			<p>Большинство едет в Гранд Каньон и толпится там</p>
     		</div>
     	</div>
@@ -103,39 +104,43 @@
     	<div class="form">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    		<a class="research_hotels" href="hotels.html">Поиск гостиницы в Седоне</a>
+    		<a class="research_hotels" href="hotels_form.html">Поиск гостиницы в Седоне</a>
        
 	       <form class="research" method="get" action="">
-	    	  <label for="check_in">Дата заезда</label><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" />
-	    	  <label for="check_out">Дата выезда</label><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" />
+	    	  <label for="check_in">Дата заезда<input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" /></label>
+	    	  <label for="check_out">Дата выезда<input id="check_out" type="text" name="date_check_out" value="4 июля 2016" /></label>
 	    	  <div class="quantity_controls">
-	    		 <input class="quantity_plus" type="button" value="+">
-                    <label for="quantity_adult">Взрослые</label><input id="quantity_adult" name="quantity" type="text" value="2">
-	    		 <input class="quantity_minus" type="button" value="-">
+                <label for="quantity_adult">Взрослые</label>
+	    		<input class="quantity_plus" type="button" value="+">
+                    <input id="quantity_adult" name="quantity" type="text" value="2">
+	    		    <input class="quantity_minus" type="button" value="-">
 	    	  </div>
 	    	  <div class="quantity_controls">
+                <label for="quantity_children">Дети</label>
 	    		 <input class="quantity_plus" type="button" value="+">
-                    <label for="quantity_children">Дети</label><input id="quantity_children" name="quantity" type="text" value="0">
-	    		 <input class="quantity__minus" type="button" value="-">
+                    <input id="quantity_children" name="quantity" type="text" value="0">
+	    		    <input class="quantity__minus" type="button" value="-">
 	    	  </div>
 	    	  <input type="submit" value="Найти">
 	       </form>
         </div>    	
         <!-- End form -->
 
-        <div class="map"></div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26190.49176583018!2d-111.7951966!3d34.8609642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1472157731504" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
         
     </main>
     <footer class="main-footer">
       <div class="container">
         <p>#Visitsedona</p>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Твиттер</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-ytube" href="#">Ютуб</a>
+          <a class="social-btn" href="#">Твиттер<span class="icon-twitter"></span></a>
+          <a class="social-btn" href="#"><span class="icon-facebook"></span>Фейсбук</a>
+          <a class="social-btn" href="#">Ютуб<span class="icon-youtube"></span></a>
         </section>
         <section class="footer-copyright">
-          <span>Website by</span>
+          <p>Website by</p>
           <a class="logo_academy" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy_logo" /></a>
         </section>
       </div>

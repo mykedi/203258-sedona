@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -37,32 +38,34 @@
     
     
         <div class="inner_form">
-            <form action="0#" method="post">
-                <div class="features_form">
-                    <div class="infrastructure">
-                        <h2>Инфраструктура</h2>
-                        <input type="checkbox" name="filter_pool" id="pool"><label for="pool">Бассейн</label><br>
-                        <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label><br>
-                        <input type="checkbox" name="filter_wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
-                    </div>
-                    <div class="houses_type">
-                        <h2>Тип жилья</h2>
-                        <input type="checkbox" name="filter_hotels" id="hotels"><label for="hotels">Гостиница</label><br>
-                        <input type="checkbox" name="filter_motels" id="motels"><label for="motels">Мотель</label><br>
-                        <input type="checkbox" name="filter_apartments" id="apartments"><label for="apartments">Апартаменты</label>
-                    </div>
+            <form class="features_form" action="0#" method="post">
+                
+                <div class="infrastructure">
+                    <h2>Инфраструктура</h2>
+                    <input type="checkbox" name="filter_pool" id="pool"><label for="pool">Бассейн</label><br>
+                    <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label><br>
+                    <input type="checkbox" name="filter_wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
                 </div>
+                <div class="houses_type">
+                    <h2>Тип жилья</h2>
+                    <input type="checkbox" name="filter_hotels" id="hotels"><label for="hotels">Гостиница</label><br>
+                    <input type="checkbox" name="filter_motels" id="motels"><label for="motels">Мотель</label><br>
+                    <input type="checkbox" name="filter_apartments" id="apartments"><label for="apartments">Апартаменты</label>
+                </div>
+                
                 <div class="range-filter">
                     <h2>Стоимость в сутки (Р)</h2>
-                    <div class="range-controls">
-                        <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
-                        <div class="toggle min-toggle"></div>
-                        <div class="toggle max-toggle"></div>
-                    </div>
+                    
                     <div class="price-controls">
                         <input class="min-price" type="text" value="от 0">
                         <input class="max-price" type="text" value="до 3000">
                     </div>
+                    <div class="range-controls">
+                        <div class="scale"><div style="margin-left:0px; width: 255px;" class="bar"></div></div>
+                        <div class="toggle min-toggle"></div>
+                        <div class="toggle max-toggle"></div>
+                    </div>
+                    <button class="btn_reserch" type="submit">Показать</button>
                 </div>
                     
                     <!-- <input type="text" id="minCost" value="0" placeholder="от 0" />
@@ -71,7 +74,7 @@
                         <span></span>
                         <span></span>
                     </div> -->
-                <button class="btn" type="submit">Показать</button>
+                
             </form>
         </div>
         <!-- End form -->
@@ -90,25 +93,24 @@
                 </li>      
             </ul>
             <div class="range">
-                <a class="sort_up" href="">sort up</a>
-                <a class="sort_down" href="">sort down</a>
+                <a class="sort_up" href="">sort up<span class="icon-up-dir"></span></a>
+                <a class="sort_down" href="">sort down<span class="icon-down-dir"></span></a>
             </div>
         </div>
         <article class="hotels">
-            <div class="hotel_img">
-                <a href="amara_resort.html">
-                    <img src="img/amara_resort.jpg" width="135" height="90" alt="amara resort" />
-                </a>
-            </div>
+            <a class="hotel_img" href="amara_resort.html">
+                <img src="img/amara_resort.jpg" width="135" height="90" alt="amara resort" />
+            </a>
 
             <div class="description">
                 <h2>Amara Resort & SPA</h2>
                 <div class="details">
                     <span>Гостиница</span>
-                    <a href="amara_resort.html">Подробнее</a>
+                    <span>от 3500</span>
+                    
                 </div>
                 <div class="details">
-                    <span>от 3500</span>
+                    <a href="amara_resort.html">Подробнее</a>
                     <a href="book.html">Забронировать</a>
                 </div>
             </div>
@@ -134,12 +136,13 @@
             <div class="description">
                 <h2>Desert Qual Inn</h2>
                 <div class="details">
-                    <span>Мотель</span>
+                    
                     <a href="desert_Qual_Inn.html">Подробнее</a>
+                    <a href="book.html">Забронировать</a>
                 </div>
                 <div class="details">
+                    <span>Мотель</span>
                     <span>от 2000</span>
-                    <a href="book.html">Забронировать</a>
                 </div>
             </div>
 
