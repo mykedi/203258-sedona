@@ -41,15 +41,15 @@
         </div>
 
     	<section class="about">
-      		<h2>Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+      		<h2>Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
       		<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>  
     	</section>
 
     	<section class="reason">
     		<div class="col_1">
     			<h2> Настоящий<br> городок</h2>
-    			<p class="number">№1</p>
-    			<p>Седона - не аттракцион для туристов,<br> там течет своя жизнь</p>
+    			<p class="number">— №1 —</p>
+    			<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
     		</div>
             
     		<div class="col_2 reason_image">
@@ -60,7 +60,7 @@
     	<div class="features_list first">
     		<div class="col_1">
     			<h2 class="housing">Жилье</h2>
-    			<p>Рекомендуем жить в настоящем мотеле, все как в кино!</p>
+    			<p>Рекомендуем жить в настоящем<br> мотеле, все как в кино!</p>
     		</div>
     		<div class="col_1">
     			<h2 class="food">Еда</h2>
@@ -78,51 +78,57 @@
     		</div>
     		<div class="col_1">
     			<h2>Там есть<br> мост дьявола</h2>
-    			<p class="number">№2</p>
-    			<p>Да, по нему можно пройти! если конечно<br> вы осмелитесь</p>
+    			<p class="number">— №2 —</p>
+    			<p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
     		</div>
     	</section>
 
     	<div class="features_list second">
     		<div class="col_1">
     			<h2 class="features_name">Небольшая площадь</h2>
-    			<p class="number">№3</p>
-    			<p>Все достопримечательности<br> находятся очень близко</p>
+    			<p class="number">— №3 —</p>
+    			<p>Все достопримечательности находятся очень близко</p>
     		</div>
     		<div class="col_1">
     			<h2 class="features_name">Красивая дорога</h2>
-    			<p class="number">№4</p>
-    			<p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно</p>
+    			<p class="number">— №4 —</p>
+    			<p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
     		</div>
     		<div class="col_1">
     			<h2 class="features_name">Мало туристов</h2>
-    			<p class="number">№5</p>
+    			<p class="number">— №5 —</p>
     			<p>Большинство едет в Гранд Каньон и толпится там</p>
     		</div>
     	</div>
 
     	<div class="form">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     		<a class="research_hotels" href="hotels_form.html">Поиск гостиницы в Седоне</a>
        
-	       <form class="research" method="get" action="">
-	    	  <label for="check_in">Дата заезда<input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" /></label>
-	    	  <label for="check_out">Дата выезда<input id="check_out" type="text" name="date_check_out" value="4 июля 2016" /></label>
-	    	  <div class="quantity_controls">
-                <label for="quantity_adult">Взрослые</label>
-	    		<input class="quantity_plus" type="button" value="+">
+	        <form class="research" method="get" action="">
+                <div class="filds">
+	    	        <label for="check_in">Дата заезда</label>
+                    <div class="filds_in"><input id="check_in" type="text" name="date_check_in" value="24 апреля 2016" /><span class="icon-calendar 1"></span></div>
+                </div>
+                <div class="filds">
+	    	        <label for="check_out">Дата выезда</label>
+                    <div class="filds_in"><input id="check_out" type="text" name="date_check_out" value="4 июля 2016" /><span class="icon-calendar 2"></span></div>
+                </div>
+
+	    	    <div class="quantity_controls">
+                    <label for="quantity_adult">Взрослые</label>
+	    		    <button type="button" value="-"><span class="icon-minus"></span></button>
                     <input id="quantity_adult" name="quantity" type="text" value="2">
-	    		    <input class="quantity_minus" type="button" value="-">
+                    <button type="button" value="+"><span class="icon-plus"></span></button>
 	    	  
-	    	  
-                <label for="quantity_children">Дети</label>
-	    		<input class="quantity_plus" type="button" value="+">
-                <input id="quantity_children" name="quantity" type="text" value="0">
-	    		 <input class="quantity__minus" type="button" value="-">
-	    	  </div>
-	    	  <input type="submit" value="Найти">
-	       </form>
+                    <label for="quantity_children">Дети</label>
+	    		    <button type="button" value="-"><span class="icon-minus"></span></button>
+                    <input id="quantity_children" name="quantity" type="text" value="0">
+                    <button type="button" value="+"><span class="icon-plus"></span></button> 
+	    	    </div>
+	    	    <input type="submit" value="Найти">
+	        </form>
         </div>    	
         <!-- End form -->
 
@@ -141,7 +147,7 @@
         </section>
         <section class="footer-copyright">
           <p>Website by</p>
-          <a class="logo_academy" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy_logo" /></a>
+          <a class="logo_academy" href="https://htmlacademy.ru"></a>
         </section>
       
     </footer>

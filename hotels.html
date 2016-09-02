@@ -44,13 +44,13 @@
                     <h2>Инфраструктура</h2>
                     <input type="checkbox" name="filter_pool" id="pool" checked><label for="pool">Бассейн</label><br>
                     <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label><br>
-                    <input type="checkbox" name="filter_wi-fi" id="wi-fi"><label for="wi-fi">WI-FI</label>
+                    <input type="checkbox" name="filter_wi-fi" id="wi-fi" disabled><label for="wi-fi">WI-FI</label>
                 </div>
                 <div class="houses_type">
                     <h2>Тип жилья</h2>
                     <input type="checkbox" name="filter_hotels" id="hotels" checked><label for="hotels">Гостиница</label><br>
                     <input type="checkbox" name="filter_motels" id="motels" checked><label for="motels">Мотель</label><br>
-                    <input type="checkbox" name="filter_apartments" id="apartments" checked><label for="apartments">Апартаменты</label>
+                    <input type="checkbox" name="filter_apartments" id="apartments" checked disabled><label for="apartments">Апартаменты</label>
                 </div>
                 
                 <div class="range-filter">
@@ -67,14 +67,6 @@
                     </div>
                     <button class="btn_reserch" type="submit">Показать</button>
                 </div>
-                    
-                    <!-- <input type="text" id="minCost" value="0" placeholder="от 0" />
-                    <input type="text" id="maxCost" value="5000" placeholder="до 5000" />
-                    <div class="range">
-                        <span></span>
-                        <span></span>
-                    </div> -->
-                
             </form>
         </div>
         <!-- End form -->
@@ -83,7 +75,7 @@
             <p>Сортировка</p>
             <ul class="sorting_type">
                 <li>
-                    <a class=":active" href="#">По цене</a>
+                    <a class="active" href="#">По цене</a>
                 </li>
                 <li>
                     <a href="#">По типу</a>
@@ -93,8 +85,8 @@
                 </li>      
             </ul>
             <div class="range">
-                <a href="">sort up<span class="icon-up-dir"></span></a>
-                <a href="">sort down<span class="icon-down-dir"></span></a>
+                <a href="#">sort up<span class="icon-up-dir"></span></a>
+                <a href="#">sort down<span class="icon-down-dir"></span></a>
             </div>
         </div>
         <article class="hotels">
@@ -194,7 +186,7 @@
         </section>
         <section class="footer-copyright">
           <p>Website by</p>
-          <a class="btn" href="https://htmlacademy.ru"><img src="img/htmlacademy_logo.png" width="113" height="39" alt="htmlacademy_logo" /></a>
+          <a class="logo_academy" href="https://htmlacademy.ru"></a>
         </section>
       
     </footer>
