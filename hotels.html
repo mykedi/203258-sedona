@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -41,15 +41,27 @@
                 <form class="features_form" action="0#" method="post">
                     <div class="infrastructure">
                         <h2>Инфраструктура:</h2>
-                        <input type="checkbox" name="filter_pool" id="pool" checked><label for="pool">Бассейн</label><br>
-                        <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label><br>
-                        <input type="checkbox" name="filter_wi-fi" id="wi-fi" disabled><label for="wi-fi">WI-FI</label>
+                        <div class="check">
+                            <input type="checkbox" name="filter_pool" id="pool" checked><label for="pool">Бассейн</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" name="filter_parking" id="parking"><label for="parking">Парковка</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" name="filter_wi-fi" id="wi-fi" disabled><label for="wi-fi">WI-FI</label>
+                        </div>
                     </div>
                     <div class="houses_type">
                         <h2>Тип жилья:</h2>
-                        <input type="checkbox" name="filter_hotels" id="hotels" checked><label for="hotels">Гостиница</label><br>
-                        <input type="checkbox" name="filter_motels" id="motels" checked><label for="motels">Мотель</label><br>
-                        <input type="checkbox" name="filter_apartments" id="apartments" checked disabled><label for="apartments">Апартаменты</label>
+                        <div class="check">
+                            <input type="checkbox" name="filter_hotels" id="hotels" checked><label for="hotels">Гостиница</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" name="filter_motels" id="motels" checked><label for="motels">Мотель</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" name="filter_apartments" id="apartments" checked disabled><label for="apartments">Апартаменты</label>
+                        </div>
                     </div>
                 
                     <div class="range-filter">
