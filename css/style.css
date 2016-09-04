@@ -378,6 +378,7 @@ ul {
 	background: 0 0;
 	color: #ffffff;
 	text-transform: uppercase;
+	outline: none;
 }
 
 .btn_reserch:hover {
@@ -393,7 +394,6 @@ ul {
 	display: flex;
 	justify-content: flex-start;
 	border-bottom: 1px solid #e5e5e5;
-	
 	/*outline: 2px solid red;*/
 }
 
@@ -427,6 +427,7 @@ ul {
 	margin-right: 34px;
 	border-bottom: 1px dotted #81b3d2;
 	color: rgba(0, 0, 0,  0.3);
+	font-weight: normal;
 }
 
 .sorting_type li:nth-child(2) {
