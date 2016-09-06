@@ -737,7 +737,7 @@ ul {
 	height: 80px;
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -590px -8px;
-}    
+}
 
 .form {
 	position: relative;
@@ -1100,7 +1100,7 @@ ul {
 .main-footer-inner .logo_academy:hover {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -465px -10px;
-} 
+}
 
 .main-footer-inner .logo_academy:active {
 	background: url("../img/sprite.png") no-repeat;
