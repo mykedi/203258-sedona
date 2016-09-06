@@ -26,7 +26,7 @@ body .inner-page {
 
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+	   url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
@@ -99,13 +99,13 @@ p {
 }
 	
 ul {
-  	list-style: none;
-  	margin: 0;
-  	padding: 0;
-  	align-items: center;
-  	text-align: left;
-  	font-weight: bold;
-  	text-decoration: none; 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	text-align: left;
+	font-weight: bold;
+	text-decoration: none; 
 }
 
 .nav li:nth-child(4n) {
@@ -291,51 +291,51 @@ ul {
 }
 
 .range-filter {
-    width: 315px;
-    margin-left: auto;
-    margin-right: 74px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+	width: 315px;
+	margin-left: auto;
+	margin-right: 74px;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .range-controls {
-    position: relative;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 16px;
-    border-radius: 5px;
-    overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin-bottom: 16px;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .scale {
-    margin-top: 19px;
-    height: 2px;
-    background: rgba(255, 255, 255, 0.3);
+	margin-top: 19px;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .bar {
-    height: 2px;
-    background: #ffffff;
+	height: 2px;
+	background: #ffffff;
 }
 
 .toggle {
-    position: absolute;
-    top: 10px;
-    left:30px;
-    width: 4px;
-    height: 4px;
-    border: 8px solid white;
-    background: #ababab;
-    cursor: pointer;
-    border-radius:50%;
+	position: absolute;
+	top: 10px;
+	left:30px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid white;
+	background: #ababab;
+	cursor: pointer;
+	border-radius:50%;
 }
 
 .min-toggle {
-    left: 0px;
+	left: 0px;
 }
 
 .max-toggle {
-    left: 250px;
+	left: 250px;
 }
 
 .min-toggle:hover, .max-toggle:hover {
@@ -774,10 +774,6 @@ ul {
 	text-align: left;
 }
 
-.form .research_show {
-	display: block;
-}
-
 .filds label {
 	width: 110px;
 }
@@ -1111,16 +1107,23 @@ ul {
 	background-position: -332px -10px;
 }
 
+.form .research_show {
+	display: block;
+	animation-name: appear;
+	animation-duration: 0.5s;
+}
+
 @keyframes appear {
 	0% {
-		transform: translateY(-500px);
+	transform: translateY(-25%);
+	opacity: 0.0;
 	}
-	100% {
-		transform: translateY(0px);	
-	}
-} 
 
-form .research_show {
-	animation-name: appear;
-	animation-duration: 5s;
+	85% {
+	opacity: 20%;
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
 }
