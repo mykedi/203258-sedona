@@ -1,5 +1,4 @@
 body {
-	
 	margin: 0;
 	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 14px;
@@ -12,7 +11,6 @@ body .inner-page {
 	width: 1200px;
 	min-height: 2762px;
 	margin: 0;
-
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -37,7 +35,6 @@ body .inner-page {
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-sedona";
@@ -46,7 +43,6 @@ body .inner-page {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
 
@@ -81,36 +77,26 @@ p {
 .container {
 	width: 1200px;
 	min-width: 768px;
-	/*min-height: 2762px;*/
 	margin: 0 auto;
 	position: relative;
 	background: #ffffff;
 	box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.5);
-	/*outline: 3px solid red;*/
 }
-
 
 .main-header {
 	width: auto;
 	min-height: 55px;
-
 }
 
 .main-navigation {
 	padding: 0 6%;
-	
-
 }
 
 .nav {
 	height: 56px;
 	display: flex;
-
 	justify-content: space-between;
-	/*outline: 2px solid yellow;*/
-	
 }
-
 	
 ul {
   	list-style: none;
@@ -119,7 +105,6 @@ ul {
   	align-items: center;
   	text-align: left;
   	font-weight: bold;
-  	
   	text-decoration: none; 
 }
 
@@ -133,7 +118,6 @@ ul {
 
 .nav li {
 	width: 20%;
-
 }
 
 .nav li:nth-child(3n) {
@@ -163,7 +147,6 @@ ul {
 
 .index-logo:after {
 	position: absolute;
-
 }
 
 .background_view {
@@ -171,14 +154,12 @@ ul {
 	background: url("../img/background_photo.jpg") no-repeat 0% 22%;
 	background-size: cover;
 	position: relative;
-	
 }
 
 .background_view:after {
 	content: "";
 	background: url("../img/background_shape.png") no-repeat;
 	height: 57px;
-	
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -196,17 +177,12 @@ ul {
 	background-size: cover;
 	color: #ffffff;	
 	text-align: left;
-	
 }
 
-
-
 .features_form {
-
 	display: flex;
 	justify-content: space-around;
 	text-align: left;
-	
 }
 
 .features_form .infrastructure {
@@ -214,8 +190,6 @@ ul {
 	height: 217px;
 	padding-left: 71px;
 	line-height: 3em;
-	
-	/*outline: 2px solid red;*/
 }
 
 .features_form input[type="checkbox"] {
@@ -224,7 +198,6 @@ ul {
 
 .infrastructure input[type="checkbox"] +label {
 	position: relative;
-	
 	padding-left: 41px;
 	cursor: pointer;
 }
@@ -253,6 +226,7 @@ ul {
 	margin-top: 16px;
 	margin-bottom: 2px;
 }
+
 .infrastructure h2, .houses_type h2 {
 	height: 30px;
 	font-size: 16px;
@@ -267,14 +241,11 @@ ul {
 	line-height: 3em;	
 }
 
-/*.infrastructure h2 {
-	margin-bottom: 3px;
-}*/
-
 .check {
 	height: 30px;
 
 }
+
 .check:nth-child(2) {
 	margin-top: 10px;
 }
@@ -286,7 +257,6 @@ ul {
 
 .houses_type input[type="checkbox"] +label {
 	position: relative;
-	
 	padding-left: 41px;
 	cursor: pointer;
 }
@@ -297,7 +267,6 @@ ul {
 	text-align: center;
 	border: 2px solid #fff;
 	border-radius: 3px;
-
 }
 
 .price-controls input {
@@ -332,21 +301,23 @@ ul {
 .range-controls {
     position: relative;
     width: 100%;
-
     height: 30px;
     margin-bottom: 16px;
     border-radius: 5px;
     overflow: hidden;
 }
+
 .scale {
     margin-top: 19px;
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
 }
+
 .bar {
     height: 2px;
     background: #ffffff;
 }
+
 .toggle {
     position: absolute;
     top: 10px;
@@ -358,9 +329,11 @@ ul {
     cursor: pointer;
     border-radius:50%;
 }
+
 .min-toggle {
     left: 0px;
 }
+
 .max-toggle {
     left: 250px;
 }
@@ -394,16 +367,13 @@ ul {
 	display: flex;
 	justify-content: flex-start;
 	border-bottom: 1px solid #e5e5e5;
-	/*outline: 2px solid red;*/
 }
 
 .sorting p {
-	/*width: 25%;*/
 	font-size: 12px;
 	font-weight: bold;
 	margin: 0;
 	padding-right: 40px;
-	
 }
 
 .sorting p:nth-child(1) {
@@ -416,9 +386,7 @@ ul {
 .sorting_type {
 	width: 30%;
 	display: flex;
-	/*justify-content: space-between;*/
 	align-items: center;
-
 }
 
 .sorting_type a {
@@ -454,7 +422,6 @@ ul {
 	display: flex;
 	align-items: center;
 	margin-left: auto;
-
 	font-size: 0;
 	vertical-align: top;
 	text-decoration: none;
@@ -466,19 +433,18 @@ ul {
 	color: #81b3d2;
 	text-align: right;
 }
+
 .range .icon-up-dir {
 	color: rgba(0, 0, 0, 0.3);
-
 }
 
 .icon-up-dir::before {
-	
 	margin: 6px 0px 0px 0px;
 	padding: 0;
 	text-align: right;
 }
+
 .icon-down-dir::before {
-	
 	margin: 6px 0px 0px 2px;
 	padding: 0;
 	text-align: right;
@@ -493,7 +459,6 @@ ul {
 } 
 
 .inner-page .hotels {
-	/*width: 1056px;*/
 	min-height: 91px;
 	margin: 0 auto;
 	padding-left: 72px;
@@ -503,7 +468,6 @@ ul {
 	align-items: center;
 	border-bottom: 1px solid #e5e5e5;
 }
-
 
 .inner-page .hotel_img {
 	width: 135px;
@@ -521,11 +485,8 @@ ul {
 	height: 95px;
 	display: flex;
 	flex-direction: column;
-	/*justify-content: space-between;*/
 	text-align: left;
 	font: inherit;
-	/*vertical-align: top;*/
-
 }
 
 .description h2 {
@@ -554,6 +515,7 @@ ul {
 .details span {
 	margin-right: 35px;
 }
+
 .details .name_2 {
 	margin-right: 63px;
 }
@@ -569,11 +531,9 @@ ul {
 	color: #ffffff;
 	font-weight: bold;
 	padding: 5px 15px;
-	
 }
 
 .details a:first-child {
-	
 	background: #81b3d2;
 	margin-right: 5px;
 }
@@ -612,14 +572,12 @@ ul {
 .rating_icon {
 	margin: 0;
 	text-align: right;
-
 }
 
 .icon-star {
 	display: inline-flex;
 	font-size: 19px;
 	color: #81b3d2;
-	/*padding: 20px;*/
 	line-height: 48px;
 }
 
@@ -641,7 +599,6 @@ ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*outline: 2px solid red;*/
 }
 
 .about > h2 {
@@ -649,25 +606,19 @@ ul {
 	margin-top: 59px;
 	margin-bottom: 0px;
 	line-height: 26px;
-	/*outline: 2px solid red;*/
-
 }
+
 .about p {
 	width: 575px;
 	margin: 31px 0px;
-	/*outline: 2px solid red;*/
-
 }
 
 .reason {
-	/*height: 258px;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	background-color: #81b3d2;
-	/*outline: 2px solid red;*/
 }
-
 
 .reason .col_1 h2 {
 	color: #ffffff;
@@ -681,7 +632,6 @@ ul {
 	margin-bottom: 20px;
 	color: #ffffff;	
 }
-
 
 .reason_image {
 	position: relative;
@@ -700,7 +650,6 @@ ul {
 
 .col_1 {
 	width: 33.33333%;
-	/*outline: 2px solid yellow;*/
 }
 
 .col_2 {
@@ -712,7 +661,6 @@ ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	/*align-items: center;*/
 	background-color: #eeeeee;
 }
 
@@ -730,7 +678,7 @@ ul {
 	background-color: #ffffff;
 }
 .first .col_1 p {
-	width: 300px;
+	width: 289px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 33px;
@@ -743,6 +691,7 @@ ul {
 	margin-left: auto;
 	margin-bottom: 25px;
 }
+
 .second .col_1 p {
 	width: 280px;
 	margin-right: auto;
@@ -766,7 +715,6 @@ ul {
 	background-position: -101px -5px;
 }
 
-
 .food::before {
 	content: "";
 	display: flex;
@@ -778,7 +726,6 @@ ul {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -7px -5px;
 }
-
 
 .souvenirs::before {
 	content: "";
@@ -795,15 +742,15 @@ ul {
 .form {
 	position: relative;
 	padding-top: 58px;
-	
 }
 
 .form p {
+	width: 400px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	color: #333333;
-	
 }
+
 .form h2 {
 	font-size: 30px;
 	margin-bottom: 35px;
@@ -811,9 +758,9 @@ ul {
 	text-align: center;
 }
 
-
 .form .research {
 	position: absolute;
+	display: none;
 	top: 292px;
 	left: 0;
 	right: 0;
@@ -827,13 +774,16 @@ ul {
 	text-align: left;
 }
 
+.form .research_show {
+	display: block;
+}
+
 .filds label {
 	width: 110px;
 }
 
 .quantity_controls>label:nth-child(2) {
 	width: 43px;
-	/*text-align: right;*/
 }
 
 .research .filds {
@@ -851,7 +801,6 @@ ul {
 	text-transform: inherit;
 	font-weight: bold;
 	outline: none;
-
 }
 
 .research input:hover {
@@ -860,9 +809,9 @@ ul {
 
 .research input:focus {
 	background-color: #ffffff;
-	border: 2px solid #e5e5e5;
-
+	outline: 2px solid #e5e5e5;
 }
+
 .filds_in {
 	position: relative;
 }
@@ -895,10 +844,10 @@ ul {
 .quantity_controls label:first-child {
 	margin: 0px 41px 0px 0px;
 }
+
 .quantity_controls label {
 	margin: 0px 27px 0px 57px;
 }
-
 
 .quantity_controls input {
 	width: 114px;
@@ -974,7 +923,6 @@ ul {
 	z-index: 2;
 }
 
-
 .map {
 	background: url(../img/map.jpg) no-repeat;
 	width: auto;
@@ -989,20 +937,17 @@ ul {
 	right: 0;
 	min-height: 120px;
 	background: rgba(255, 255, 255, 0.9);
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 
-
 .main-footer p {
 	width: 33%;
 	font-size: 21px;
 	font-weight: bold;
 	align-self: center;
-
 }
 
 .footer-social {
@@ -1015,7 +960,6 @@ ul {
 	width: 46px;
 	height: 48px;
 	margin: 0 5px;
-
 	font-size: 0;
 	vertical-align: top;
 	text-decoration: none;
@@ -1025,10 +969,10 @@ ul {
 
 .social-btn:hover {
 	background: #669ec0;
+
 }
 .social-btn:active {
 	background: #5496bd;
-	
 }
 
 .social-btn:active span {
@@ -1055,20 +999,6 @@ ul {
 	font-weight: normal;
 }
 
-/*.logo_academy {
-	width: 113px;
-	min-height: 39px;
-	
-}*/
-
-/*.logo_academy:hover {
-	background: url(../img/htmlacademy_logo_hvr.png) no-repeat;
-}
-
-.logo_academy:active {
-	background: url(../img/htmlacademy_logo_act.png) no-repeat;
-}*/
-
 .logo_academy {
 	content: "";
 	display: flex;
@@ -1080,10 +1010,12 @@ ul {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -199px -10px;
 }
+
 .logo_academy:hover {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -465px -10px;
 } 
+
 .logo_academy:active {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -332px -10px;
@@ -1093,15 +1025,12 @@ ul {
 /*Футер Inner*/
 
 .main-footer-inner {
-	
 	min-height: 120px;
 	background: #ffffff;
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-
 }
 
 .main-footer-inner p {
@@ -1109,7 +1038,6 @@ ul {
 	font-size: 21px;
 	font-weight: bold;
 	align-self: center;
-	/*margin-left: 25px;*/
 }
 
 .main-footer-inner .footer-social {
@@ -1122,7 +1050,6 @@ ul {
 	width: 46px;
 	height: 48px;
 	margin: 0 5px;
-
 	font-size: 0;
 	vertical-align: top;
 	text-decoration: none;
@@ -1137,6 +1064,7 @@ ul {
 .main-footer-inner.social-btn:active {
 	background: #5496bd;
 }
+
 .main-footer-inner .social-btn:active span {
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -1172,11 +1100,27 @@ ul {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -199px -10px;
 }
+
 .main-footer-inner .logo_academy:hover {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -465px -10px;
 } 
+
 .main-footer-inner .logo_academy:active {
 	background: url("../img/sprite.png") no-repeat;
 	background-position: -332px -10px;
+}
+
+@keyframes appear {
+	0% {
+		transform: translateY(-500px);
+	}
+	100% {
+		transform: translateY(0px);	
+	}
 } 
+
+form .research_show {
+	animation-name: appear;
+	animation-duration: 5s;
+}
